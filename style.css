@@ -34,6 +34,26 @@ main {
   clear: both;
 }
 
+.scopricta{
+  padding: 10px 40px;
+  max-width: 220px;
+  font-size: 14px;
+}
+
+.calcio{
+  text-align: center;
+  color: white;
+  padding: 30px 0 30px 0;
+}
+
+.calcio:not(.guarda) {
+  background-color: #1C5EEA;
+}
+
+.guarda{
+  background-color: #003366;
+}
+
 /*** fine regole layout base ***/
 
 /*** header ***/
@@ -186,13 +206,35 @@ header {
   margin: 20px auto;
 }
 
-.meno .container p {
+.container p {
   padding: 0 70px 0 70px;
   font-size: 16px;
 
 }
+/*** fine perché non ne potrai ***/
+
+/*** inizio calcio guarda***/
+
+.container img{
+  max-width: 100%;
+}
+
+.calcio.guarda .col-lg-12.col-md-12.col-xs-12{
+  margin-bottom: 10px;
+}
+
+.calcio .col-lg-12.col-md-12.col-xs-12 h1,
+.calcio.guarda .col-lg-12.col-md-12.col-xs-12 h1 {
+  font-size: 30px;
+  margin: 0;
+}
 
 
+.calcio.guarda .col-lg-12.col-md-12.col-xs-12 p {
+  margin-top: 16px;
+}
+
+/*** fine calcio guarda ***/
 
 @media screen and (max-width: 1440px) {
     #jumbo {
@@ -372,6 +414,4 @@ header {
     .meno .container .col-lg-4:first-child{
       margin-top: 0;
     }
-
-
 }
