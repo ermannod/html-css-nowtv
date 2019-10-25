@@ -27,6 +27,13 @@ a {
 main {
     padding-top: 60px;
 }
+
+.clearfix::after{
+  display: table;
+  content: "";
+  clear: both;
+}
+
 /*** fine regole layout base ***/
 
 /*** header ***/
@@ -120,6 +127,8 @@ header {
     height: 70px;
 }
 
+
+
 #ribbon p {
     text-align: center;
     color: white;
@@ -132,14 +141,58 @@ header {
     font-weight: normal;
 }
 
+/*** fine ribbon ***/
+
+/*** inizio movies ***/
+#movies .container {
+  margin: 0;
+  width:100%;
+}
+
 #movies img {
-    max-width: 100%;
+    width: 100%;
     border-right: 5px solid white;
 }
 
 #movies .col-lg-3:last-child img {
     border-right: none;
 }
+
+/*** fine movies ***/
+
+/*** inizio perché non ne potrai ***/
+
+.meno {
+  background-color: #022B42;
+  text-align: center;
+  color: white;
+}
+
+.meno img{
+  height:90px;
+}
+
+.meno .container {
+  padding: 60px 0 60px 0;
+}
+
+.container .col-lg-12 h1 {
+  margin-bottom: 60px;
+  font-size: 36px;
+}
+
+.container h3 {
+  font-size: 24px;
+  margin: 20px auto;
+}
+
+.meno .container p {
+  padding: 0 70px 0 70px;
+  font-size: 16px;
+
+}
+
+
 
 @media screen and (max-width: 1440px) {
     #jumbo {
@@ -177,6 +230,25 @@ header {
         width: 50%;
         transform: translateX(-50%);
     }
+
+    .meno .container{
+      padding: 40px 0 40px 0;
+    }
+
+    .container .col-lg-12 h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .container h3 {
+      font-size: 15px;
+      margin: 10px auto;
+    }
+
+    .meno .container p {
+      padding: 0 30px 0 30px;
+      font-size: 14px;
+
 }
 
 @media screen and (max-width: 1023px) {
@@ -205,6 +277,31 @@ header {
     #jumbo-text {
         top: 390px;
     }
+
+    .meno .container{
+      padding: 40px 0 40px 0;
+    }
+
+    .container .col-lg-12 h1 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .container h3 {
+      font-size: 15px;
+      margin: 10px auto;
+    }
+
+    .meno .container p {
+      padding: 0 30px 0 30px;
+      font-size: 14px;
+
+}
+
+@media screen and (max-width:992px) {
+    #movies .col-lg-3:nth-of-type(3) img {
+    border-right: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -248,4 +345,33 @@ header {
     #ribbon .button {
         margin-left: 0;
     }
+
+    #movies .col-lg-3:nth-of-type(1) img {
+    border-right: none;
+    }
+
+    .meno .container{
+      padding: 30px 5px 30px 5px;
+    }
+
+    .container .col-lg-12 h1 {
+      font-size: 22px;
+    }
+
+    .container h3 {
+      font-size: 20px;
+      margin: 10px auto;
+    }
+
+    .meno .container p {
+      font-size: 16px;
+    }
+    .meno .container .col-lg-4 {
+      margin-top: 15px;
+    }
+    .meno .container .col-lg-4:first-child{
+      margin-top: 0;
+    }
+
+
 }

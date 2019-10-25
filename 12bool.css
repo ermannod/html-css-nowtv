@@ -219,6 +219,9 @@
     .md-offset-0 {
         margin-left: 0;
     }
+
+    .md-hidden {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -323,4 +326,7 @@
     .xs-offset-0 {
         margin-left: 0;
     }
+
+    .xs-hidden {
+      display: none;
 }
