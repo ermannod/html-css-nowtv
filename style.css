@@ -206,7 +206,7 @@ header {
   margin: 20px auto;
 }
 
-.container p {
+.container p:not(footer p){
   padding: 0 70px 0 70px;
   font-size: 16px;
 
@@ -235,6 +235,53 @@ header {
 }
 
 /*** fine calcio guarda ***/
+
+/*** footer ***/
+
+footer {
+  background-color: #1C1C21;
+  color:
+}
+
+footer .container{
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+li{
+  padding: 10px 0 10px 0;
+}
+
+li a{
+  color: white;
+  text-decoration: none;
+}
+
+.social{
+  display: inline;
+  font-size: 25px;
+  margin: 0 10px 0 10px;
+}
+
+
+footer p{
+  font-size: 12px;
+  color: #aaacb1;
+  margin-top: 30px;
+}
+
+footer p a{
+  color: white;
+  text-decoration: underline;
+}
+
+a:hover{
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1440px) {
     #jumbo {
@@ -337,6 +384,40 @@ header {
     .meno .container p {
       padding: 0 30px 0 30px;
       font-size: 14px;
+    }
+
+    footer .container{
+    text-align: center;
+    max-width: 1170px;
+    }
+
+    .col-mld-12 {
+    width: 100%;
+    }
+
+    .col-mld-12:first-child{
+    margin-bottom: 30px;
+    }
+
+    .col-mld-12:nth-last-of-type(2){
+    margin-top: 32px;
+    }
+
+    .col-mld-6 {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+
+    li:not(.social){
+    border-top:1px solid #aaacb1;
+    border-right: 0;
+    border-left: 0;
+    }
+
+    li:last-of-type:not(.social){
+    border-bottom:1px solid #aaacb1;
+    }
 
 }
 
@@ -344,6 +425,7 @@ header {
     #movies .col-lg-3:nth-of-type(3) img {
     border-right: none;
   }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -413,5 +495,13 @@ header {
     }
     .meno .container .col-lg-4:first-child{
       margin-top: 0;
+    }
+
+    footer .container {
+      width: 100%;
+    }
+
+    .col-xms-12{
+      width: 100%;
     }
 }
